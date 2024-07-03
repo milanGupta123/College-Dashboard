@@ -10,7 +10,6 @@ export class LoginComponent implements OnInit {
 
   signupUsers:any[]=[];
   signupObj:any = {
-    userName:"",
     email:"",
     password:""
   };
@@ -32,7 +31,6 @@ export class LoginComponent implements OnInit {
     this.signupUsers.push(this.signupObj);
     localStorage.setItem('signupUsers',JSON.stringify(this.signupUsers));
     this.signupObj={
-      userName:"",
       email:"",
       password:""
     }
